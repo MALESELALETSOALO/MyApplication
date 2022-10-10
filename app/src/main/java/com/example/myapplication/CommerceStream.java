@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class CommerceStream extends AppCompatActivity implements View.OnClickListener {
+import com.google.android.gms.dtdi.analytics.Results;
+
+public class CommerceStream<Results, a1> extends AppCompatActivity implements View.OnClickListener {
 
     EditText Point1, Point2, Point3, Point4, Point5, Point6, Point7, Results;
     Button Btn1;
     double a1, a2, a3, a4, a5, a6, a7, a8;
+    int total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +45,13 @@ public class CommerceStream extends AppCompatActivity implements View.OnClickLis
         a7 = Double.parseDouble(Point7.getText().toString());
         a8 = a1 + a2 + a3 + a4 + a5 + a6 + a7;
         Results.setText(Double.toString(a8));
+
+    }
+    public void setResults(View v) {
+        double a8 = Double.parseDouble(Results.toString());
+
+        if (a8 == 24 && (a1 == 5)) {
+            System.out.println("You qualify for");
+        }
     }
 }

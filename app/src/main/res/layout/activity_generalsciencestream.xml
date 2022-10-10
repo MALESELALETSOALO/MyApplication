@@ -236,7 +236,7 @@
     <!-- fourth Child Layout -->
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
@@ -244,12 +244,34 @@
 
 
         <Button
-            android:layout_width="378dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/Btn1"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:onClick="Calculate"
             android:text="Calculate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/EighthLayout"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/Results"
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:hint="Total Points"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
     </LinearLayout>
 
 </LinearLayout>

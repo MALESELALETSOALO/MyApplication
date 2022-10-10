@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public void CommerceStream(View view) {
         Intent intent = new Intent(this, CommerceStream.class);
         startActivity(intent);
+
+
     }
 
     public void ScienceStream(View view) {
